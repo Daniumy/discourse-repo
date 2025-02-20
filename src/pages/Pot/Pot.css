@@ -1,0 +1,273 @@
+.pot-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 88vh;
+	margin-top: 10vh;
+	width: 100%;
+	gap: 30px;
+	color: white;
+}
+
+.pot-holdings {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.pot-holdings-amount {
+	width: 100%;
+	display: grid;
+	grid-auto-rows: 60px;
+	grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+	align-items: center;
+}
+
+.coin-pot {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	width: 80%;
+	height: 50px;
+	margin: 0 auto;
+	border-radius: 8px;
+	border: 2px solid #91e1f9;
+	/* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
+	box-shadow: 5px 5px 10px -5px lightblue;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.coin-pot:hover {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	background-color: #91e1f9;
+	color: #060725;
+}
+
+.coin-pot--img {
+	height: 70%;
+}
+
+.coin-pot--amount {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	font-size: 0.8em;
+}
+
+.pot-explanation {
+	text-align: center;
+	padding: 0 100px;
+	width: fit-content;
+}
+
+.pot-explanation--text {
+	font-size: 1.3em;
+}
+
+.pot-buttons {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+}
+
+.pot-button {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	width: fit-content;
+	padding: 12px 20px;
+	background-color: #91e1f9;
+	border-radius: 8px;
+	font-size: 2.3em;
+	font-weight: bold;
+	color: #060725;
+	border: 3px solid #91e1f9;
+	cursor: pointer;
+}
+
+.pot-button.disabled {
+	pointer-events: none;
+	border: none;
+	background-color: grey;
+}
+
+.pot-button:hover {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	color: #91e1f9;
+	box-shadow: inset 3.5em 0 0 0 #060725, inset -3.5em 0 0 0 #060725;
+}
+
+@media (max-width: 900px) {
+	.pot-wrapper {
+		gap: 30px;
+	}
+
+	.coin-pot {
+		font-size: 1.3em;
+	}
+
+	.pot-explanation {
+		padding: 0 50px;
+	}
+
+	.pot-explanation--title {
+		font-size: 1.9em;
+	}
+
+	.pot-explanation--text {
+		font-size: 1.2em;
+	}
+
+	.pot-buttons {
+		gap: 30px;
+	}
+
+	.pot-button {
+		padding: 10px 16px;
+		font-size: 2em;
+		border: 3px solid #91e1f9;
+	}
+
+	.pot-holdings-amount {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+}
+
+@media (max-width: 630px) {
+	.pot-wrapper {
+		gap: 25px;
+	}
+
+	.coin-pot {
+		font-size: 1em;
+	}
+
+	.pot-holdings h1 {
+		font-size: 1.7em;
+	}
+
+	.pot-explanation {
+		padding: 0 30px;
+	}
+
+	.pot-explanation--title {
+		font-size: 1.7em;
+	}
+
+	.pot-explanation--text {
+		font-size: 1.1em;
+	}
+
+	.pot-buttons {
+		gap: 30px;
+	}
+
+	.pot-button {
+		padding: 10px 16px;
+		font-size: 1.8em;
+		border: 2px solid #91e1f9;
+	}
+
+	.pot-holdings-amount {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
+}
+
+@media (max-width: 510px) {
+	.pot-holdings h1 {
+		font-size: 1.5em;
+	}
+
+	.pot-explanation {
+		padding: 0 20px;
+	}
+
+	.pot-explanation--title {
+		font-size: 1.5em;
+	}
+
+	.pot-explanation--text {
+		font-size: 1em;
+	}
+
+	.pot-buttons {
+		gap: 30px;
+	}
+
+	.pot-button {
+		padding: 10px 16px;
+		font-size: 1.8em;
+		border: 2px solid #91e1f9;
+	}
+
+	.pot-holdings-amount {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
+}
+
+@media (max-width: 408px) {
+	.pot-holdings h1 {
+		font-size: 1.5em;
+	}
+
+	.pot-explanation {
+		padding: 0 20px;
+	}
+
+	.pot-explanation--title {
+		font-size: 1.5em;
+	}
+
+	.pot-explanation--text {
+		font-size: 1em;
+	}
+
+	.pot-buttons {
+		gap: 30px;
+	}
+
+	.pot-button {
+		padding: 5px 9px;
+		font-size: 1.5em;
+		border: 2px solid #91e1f9;
+	}
+
+	.pot-holdings-amount {
+		grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+	}
+
+	.coin-pot--img {
+		height: 60%;
+	}
+
+	.coin-pot--amount {
+		font-size: 0.8em;
+	}
+}
+
+@media (max-width: 408px) and (max-height: 750px) {
+	.pot-wrapper {
+		min-height: 110vh;
+	}
+}

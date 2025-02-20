@@ -1,0 +1,233 @@
+.App {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: radial-gradient(
+		circle,
+		#06082a,
+		#060725,
+		#060720,
+		#05061b,
+		#040516
+	);
+}
+
+.main-content-wrapper {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#min-info-text {
+	font-size: 0.5em;
+}
+
+option:hover {
+	background-color: #91e1f9;
+}
+
+.backend-unreachable,
+.backend-unreachable-two {
+	position: fixed;
+	bottom: 2%;
+	right: 1%;
+	z-index: 2;
+	background-color: #91e1f9;
+	padding: 20px;
+	border-radius: 8px;
+	font-size: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	display: flex;
+	flex-direction: row;
+	width: 35vw;
+}
+
+.backend-unreachable-two {
+	bottom: 5%;
+}
+
+.qrcode-wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	padding: 30px;
+	background-color: #91e1f9;
+	box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.75);
+	box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.75);
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+}
+
+.qrcode-wrapper label {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.qrcode-wrapper input {
+	border-radius: 6px;
+	width: 500px;
+	height: 50px;
+	font-size: 1.2em;
+}
+
+#submit-button {
+	width: 140px;
+	height: 50px;
+	border-radius: 6px;
+	margin: 0 auto;
+	background-color: white;
+	color: black;
+	font-weight: bold;
+	font-size: 1.5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+#close-icon {
+	align-self: flex-start;
+	cursor: pointer;
+	width: 60px;
+	margin-bottom: -20px;
+}
+
+.blockchain-loading-notification {
+	position: fixed;
+	bottom: 2%;
+	right: 1%;
+	z-index: 2;
+	background-color: #91e1f9;
+	padding: 20px;
+	border-radius: 8px;
+	font-size: 1em;
+	opacity: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	pointer-events: none;
+}
+
+.no-animation-notification {
+	position: fixed;
+	bottom: 2%;
+	right: 1%;
+	z-index: 2;
+	background-color: #91e1f9;
+	padding: 20px;
+	border-radius: 8px;
+	font-size: 1em;
+	width: 89%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.maintenance {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 4em;
+	font-weight: bold;
+	color: #91e1f9;
+	background-image: radial-gradient(
+		circle,
+		#06082a,
+		#060725,
+		#060720,
+		#05061b,
+		#040516
+	);
+	width: 100vw;
+	height: 100vh;
+}
+
+.maintenance img {
+	background-color: #060720;
+}
+
+.notification-text {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+}
+
+.blockchain-loading-notification.active {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.nautilus-loading {
+	position: absolute;
+	top: 100px;
+	right: 40px;
+	z-index: 1;
+}
+
+@keyframes spin-tails {
+	0% {
+		transform: rotateX(0);
+	}
+	100% {
+		transform: rotateX(1980deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotateX(0);
+	}
+	100% {
+		transform: rotateX(600000deg);
+	}
+}
+
+@keyframes spin-heads {
+	0% {
+		transform: rotateX(0);
+	}
+	100% {
+		transform: rotateX(2160deg);
+	}
+}
+
+.bet-selector-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 30%;
+}
+
+@media screen and (max-width: 600px) {
+	.backend-unreachable-two {
+		width: 70%;
+		flex-direction: column;
+	}
+
+	.qrcode-wrapper {
+		width: 80%;
+	}
+
+	.qrcode-wrapper input {
+		border-radius: 6px;
+		width: 300px;
+		height: 50px;
+		font-size: 1.2em;
+	}
+}

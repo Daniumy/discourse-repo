@@ -1,0 +1,45 @@
+.info-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.75);
+	box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.75);
+	transition: all 0.4s ease;
+	z-index: 2;
+	border-radius: 8px;
+	padding: 20px;
+	background-color: #91e1f9;
+	font-size: 1.2em;
+}
+
+.info-modal.show {
+	visibility: visible;
+	opacity: 1;
+}
+
+.info-modal.hide {
+	visibility: hidden;
+	opacity: 0;
+}
+
+@media screen and (max-width: 1050px) {
+	.info-modal {
+		width: 70%;
+		font-size: 1.1em;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.info-modal {
+		width: 80%;
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.info-modal {
+		width: 85%;
+		font-size: 0.9em;
+	}
+}

@@ -1,0 +1,76 @@
+.error-pop-up-wrapper {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #f34772;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	gap: 5px;
+	box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.75);
+	/* For other browsers */
+	box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.75);
+	opacity: 0;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	color: #060725;
+	z-index: -1;
+	max-width: 90vw;
+	height: fit-content;
+}
+
+.error-pop-up-wrapper.active {
+	visibility: visible;
+	opacity: 1;
+	z-index: 3;
+}
+
+.error-pop-up-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.error-pop-up-text {
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
+.error-pop-up-button {
+	background-color: #ffffff;
+	padding: 10px 20px;
+	border-radius: 8px;
+	border: none;
+	font-size: 1.1em;
+	font-weight: 500;
+	cursor: pointer;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.error-pop-up-button:hover {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	color: #91e1f9;
+	box-shadow: inset 3.5em 0 0 0 #060725, inset -3.5em 0 0 0 #060725;
+}
+
+.error-pop-up-button:active {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	padding: 20px 30px;
+}

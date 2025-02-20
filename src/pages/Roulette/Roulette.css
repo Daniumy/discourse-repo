@@ -1,0 +1,1198 @@
+.roulette-wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
+	width: 100%;
+	gap: 150px;
+}
+
+.react-howler {
+	display: none;
+}
+
+.roulette-image-wrapper {
+	width: 30%;
+	position: relative;
+}
+
+.roulette-image {
+	width: 100%;
+}
+
+.roulette-image.rotate {
+	animation: rotate 8s linear infinite;
+}
+
+.roulette-ball-wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	width: 56%;
+	height: 56%;
+}
+
+.roulette-ball-wrapper.rotate {
+	animation: ball_rotate 4s linear infinite;
+}
+
+.roulette-table-wrapper {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.roulette-tablent-upper {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.roulette-tablent-upper-top-left {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+}
+
+.roulette-tablent-upper-top-right {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 30px;
+}
+
+.roulette-bet-amount {
+	font-size: 2em;
+	color: #91e1f9;
+	font-weight: bold;
+}
+
+.chips {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+}
+
+.chip-selector {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.chip-image {
+	width: 60px;
+	cursor: pointer;
+}
+
+.roulette-tablent-upper-top-left img {
+	padding: 4px 6px;
+	background-color: #91e1f9;
+	width: 40px;
+	border-radius: 8px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+.roulette-table {
+	width: 100%;
+	height: 55%;
+	display: flex;
+	flex-direction: column;
+}
+
+.upper-part {
+	width: 100%;
+	height: 67%;
+	display: flex;
+	flex-direction: row;
+}
+
+.bottom-part {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	flex: 1;
+}
+
+.bottom-left-part {
+	width: 10%;
+}
+
+.bottom-middle-part-wrapper {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	margin-left: 2px;
+	margin-top: 1px;
+}
+
+.bottom-middle-top-row,
+.bottom-middle-bottom-row {
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+}
+
+.bottom-middle-top-zpot,
+.bottom-middle-bottom-zpot {
+	flex: 1;
+	height: 100%;
+	background-color: #35654d;
+	border: 1px solid white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.bottom-middle-top-zpot img,
+.bottom-middle-bottom-zpot img {
+	width: 40px;
+}
+
+.bottom-right-part {
+	width: 7%;
+}
+
+.zpot-0 {
+	height: 100%;
+	width: 10%;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: #35654d;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	border: 1px solid white;
+	border-top: none;
+}
+.zpot-00_0 {
+	width: 100%;
+	height: 15%;
+	background: linear-gradient(
+		180deg,
+		#35654d 30%,
+		white 30% 65%,
+		#35654d 65% 100%
+	);
+	position: relative;
+}
+.zpot-00_0:hover {
+	-webkit-box-shadow: 0 0 3px 1px #fff inset;
+	-moz-box-shadow: 0 0 3px 1px #fff inset;
+	box-shadow: 0 0 3px 1px #fff inset;
+}
+
+.zpot-00_0 img {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.hovering-roulette-amount {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -175%);
+	background-color: rgba(255, 255, 255, 0.8);
+	color: black;
+	padding: 2px 3px;
+	border-radius: 8px;
+	font-weight: 500;
+	font-size: 0.8em;
+	z-index: 2;
+}
+
+.zpot-0-inner {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.zpot-0-inner img {
+	width: 100%;
+}
+
+.pure-numbers-wrapper {
+	height: 100%;
+	width: 83%;
+	display: flex;
+	flex-direction: column;
+}
+
+.pure-numbers-row {
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+}
+
+.pure-number-wrapper-column {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+}
+
+.pure-number-wrapper-top-row,
+.pure-number-wrapper-top-row3 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 90%;
+}
+
+.pure-number-wrapper-top-row3 {
+	height: 100%;
+}
+
+.pure-number-wrapper-bottom-row {
+	height: 18%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.quadruple-zpot {
+	width: 25%;
+	height: 100%;
+	position: relative;
+}
+
+.quadruple-zpot:hover {
+	-webkit-box-shadow: 0 0 3px 1px #fff inset;
+	-moz-box-shadow: 0 0 3px 1px #fff inset;
+	box-shadow: 0 0 3px 1px #fff inset;
+}
+
+.quadruple-zpot img,
+.tricky-middle img,
+.tricky-bottom img,
+.tricky-top img,
+.double-zpot img,
+.double-vertical-zpot img {
+	position: absolute;
+	width: 40px;
+}
+
+.double-vertical-zpot img {
+	transform: translate(5%, -40%);
+}
+
+.tricky-middle img,
+.quadruple-zpot img {
+	transform: translate(-40%, -40%);
+}
+
+.tricky-middle img {
+	transform: translate(-100%, -40%);
+}
+
+.tricky-top img {
+	top: -50%;
+}
+
+.tricky-bottom img {
+	top: -100%;
+}
+
+.double-zpot img {
+	transform: translate(-35%, 30%);
+}
+.double-vertical-zpot {
+	flex: 1;
+	height: 100%;
+	position: relative;
+}
+
+.double-zpot {
+	width: 25%;
+	height: 100%;
+	position: relative;
+}
+
+.two0sand2 {
+	width: 100%;
+	height: 20%;
+	margin-top: 10px;
+	border-radius: 25%;
+}
+
+.rows-selector {
+	height: 100%;
+	width: 7%;
+	background-color: #35654d;
+	display: flex;
+	flex-direction: column;
+	border-bottom-right-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.select-a-token {
+	font-size: 1.5em;
+	color: red;
+	font-weight: bold;
+}
+
+.zpot-2to1 {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid white;
+	position: relative;
+}
+
+.zpot-2to1 img {
+	width: 100%;
+}
+
+.tricky-double-spot {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.tricky-middle {
+	height: 20%;
+	width: 100%;
+}
+
+.tricky-top,
+.tricky-bottom {
+	flex: 1;
+	width: 100%;
+	position: relative;
+}
+
+.tricky-top {
+	padding-bottom: 10px;
+}
+
+[class*="roulette-spot"] {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	cursor: pointer;
+	color: white;
+	font-size: 1.4em;
+	font-weight: bold;
+	position: relative;
+}
+
+[class*="roulette-spot"] img {
+	width: 100%;
+}
+
+[class*="roulette-spot"]:hover {
+	-webkit-box-shadow: 0 0 6px 1px #fff inset;
+	-moz-box-shadow: 0 0 6px 1px #fff inset;
+	box-shadow: 0 0 6px 1px #fff inset;
+}
+
+[class*="zpot"] {
+	color: white;
+	font-size: 1.4em;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.bottom-middle-top-zpot img {
+	width: 50px;
+}
+.bottom-middle-bottom-zpot img {
+	width: 40px;
+}
+
+[class*="zpot"]:hover {
+	-webkit-box-shadow: 0 0 6px 1px #fff inset;
+	-moz-box-shadow: 0 0 6px 1px #fff inset;
+	box-shadow: 0 0 6px 1px #fff inset;
+}
+
+.roulette-tablent-bottom {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.spin-button {
+	background-color: #91e1f9;
+	padding: 10px 30px;
+	border-radius: 8px;
+	margin-top: 10px;
+	font-size: 1.8em;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.roulette-ball-wrapper[spinto="0"] {
+	animation: ball_rotateTo0 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="37"] {
+	animation: ball_rotateTo00 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="1"] {
+	animation: ball_rotateTo1 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="2"] {
+	animation: ball_rotateTo2 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="3"] {
+	animation: ball_rotateTo3 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="4"] {
+	animation: ball_rotateTo4 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="5"] {
+	animation: ball_rotateTo5 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="6"] {
+	animation: ball_rotateTo6 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="7"] {
+	animation: ball_rotateTo7 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="8"] {
+	animation: ball_rotateTo8 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="9"] {
+	animation: ball_rotateTo9 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="10"] {
+	animation: ball_rotateTo10 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="11"] {
+	animation: ball_rotateTo11 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="12"] {
+	animation: ball_rotateTo12 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="13"] {
+	animation: ball_rotateTo13 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="14"] {
+	animation: ball_rotateTo14 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="15"] {
+	animation: ball_rotateTo15 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="16"] {
+	animation: ball_rotateTo16 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="17"] {
+	animation: ball_rotateTo17 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="18"] {
+	animation: ball_rotateTo18 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="19"] {
+	animation: ball_rotateTo19 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="20"] {
+	animation: ball_rotateTo20 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="21"] {
+	animation: ball_rotateTo21 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="22"] {
+	animation: ball_rotateTo22 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="23"] {
+	animation: ball_rotateTo23 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="24"] {
+	animation: ball_rotateTo24 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="25"] {
+	animation: ball_rotateTo25 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="26"] {
+	animation: ball_rotateTo26 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="27"] {
+	animation: ball_rotateTo27 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="28"] {
+	animation: ball_rotateTo28 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="29"] {
+	animation: ball_rotateTo29 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="30"] {
+	animation: ball_rotateTo30 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="31"] {
+	animation: ball_rotateTo31 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="32"] {
+	animation: ball_rotateTo32 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="33"] {
+	animation: ball_rotateTo33 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="34"] {
+	animation: ball_rotateTo34 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="35"] {
+	animation: ball_rotateTo35 8s normal forwards;
+}
+.roulette-ball-wrapper[spinto="36"] {
+	animation: ball_rotateTo36 8s normal forwards;
+}
+
+/* .roulette-image.rotate {
+	animation: rotate 8s linear infinite;
+}
+
+.roulette-ball-wrapper.rotate {
+	animation: ball_rotate 4s linear infinite;
+} */
+
+@keyframes rotate {
+	from {
+		transform: rotate(-360deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes ball_rotate {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+
+@keyframes ball_rotateTo0 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2025deg);
+	}
+}
+
+@keyframes ball_rotateTo28 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2035deg);
+	}
+}
+
+@keyframes ball_rotateTo9 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2044deg);
+	}
+}
+
+@keyframes ball_rotateTo26 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2054deg);
+	}
+}
+
+@keyframes ball_rotateTo30 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2063deg);
+	}
+}
+@keyframes ball_rotateTo11 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2073deg);
+	}
+}
+@keyframes ball_rotateTo7 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2082deg);
+	}
+}
+@keyframes ball_rotateTo20 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2092deg);
+	}
+}
+@keyframes ball_rotateTo32 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2101deg);
+	}
+}
+@keyframes ball_rotateTo17 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2111deg);
+	}
+}
+@keyframes ball_rotateTo5 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2120deg);
+	}
+}
+@keyframes ball_rotateTo22 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2129deg);
+	}
+}
+@keyframes ball_rotateTo34 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2139deg);
+	}
+}
+@keyframes ball_rotateTo15 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2148deg);
+	}
+}
+@keyframes ball_rotateTo3 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2158deg);
+	}
+}
+@keyframes ball_rotateTo24 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2167deg);
+	}
+}
+@keyframes ball_rotateTo36 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2176deg);
+	}
+}
+@keyframes ball_rotateTo13 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2186deg);
+	}
+}
+@keyframes ball_rotateTo1 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2195deg);
+	}
+}
+@keyframes ball_rotateTo00 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2204deg);
+	}
+}
+@keyframes ball_rotateTo27 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2214deg);
+	}
+}
+@keyframes ball_rotateTo10 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2224deg);
+	}
+}
+@keyframes ball_rotateTo25 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2233deg);
+	}
+}
+@keyframes ball_rotateTo29 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2242deg);
+	}
+}
+@keyframes ball_rotateTo12 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2251deg);
+	}
+}
+
+@keyframes ball_rotateTo8 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2261deg);
+	}
+}
+@keyframes ball_rotateTo19 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2270deg);
+	}
+}
+@keyframes ball_rotateTo31 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2280deg);
+	}
+}
+@keyframes ball_rotateTo18 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2289deg);
+	}
+}
+@keyframes ball_rotateTo6 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2299deg);
+	}
+}
+@keyframes ball_rotateTo21 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2308deg);
+	}
+}
+@keyframes ball_rotateTo33 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2318deg);
+	}
+}
+@keyframes ball_rotateTo16 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2327deg);
+	}
+}
+@keyframes ball_rotateTo4 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2337deg);
+	}
+}
+@keyframes ball_rotateTo23 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2346deg);
+	}
+}
+@keyframes ball_rotateTo35 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2356deg);
+	}
+}
+@keyframes ball_rotateTo14 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2365deg);
+	}
+}
+
+@keyframes ball_rotateTo2 {
+	from {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(2015deg);
+		/* transform: translate(-50%, -50%) rotate(2015deg); */
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.roulette-tablent-upper-top-left img {
+		padding: 4px 6px;
+		width: 30px;
+	}
+
+	.chip-image {
+		width: 55px;
+	}
+
+	.roulette-bet-amount {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	[class*="roulette-spot"] {
+		font-size: 1.1em;
+	}
+
+	[class*="zpot"] {
+		font-size: 1.1em;
+	}
+
+	.roulette-tablent-upper-top-left img {
+		padding: 4px 6px;
+		width: 28px;
+	}
+
+	.spin-button {
+		padding: 8px 25px;
+		font-size: 1.6em;
+	}
+
+	.chip-image {
+		width: 45px;
+	}
+
+	.roulette-bet-amount {
+		font-size: 1.4em;
+	}
+
+	.roulette-ball-image {
+		width: 15px;
+	}
+
+	.roulette-ball-wrapper {
+		transform: translate(-50%, -50%) rotate(45deg);
+		width: 57%;
+		height: 57%;
+	}
+}
+
+@media screen and (max-width: 920px) {
+	[class*="roulette-spot"] {
+		font-size: 0.9em;
+	}
+
+	[class*="zpot"] {
+		font-size: 0.9em;
+	}
+
+	.roulette-tablent-upper-top-left img {
+		padding: 4px 6px;
+		width: 23px;
+		border-radius: 4px;
+	}
+
+	.spin-button {
+		padding: 8px 23px;
+		font-size: 1.5em;
+	}
+
+	.chips {
+		gap: 5px;
+	}
+
+	.chip-image {
+		width: 40px;
+	}
+
+	.roulette-bet-amount {
+		font-size: 1em;
+	}
+
+	.roulette-ball-image {
+		width: 13px;
+	}
+
+	.roulette-ball-wrapper {
+		transform: translate(-50%, -50%) rotate(46deg);
+		width: 58%;
+		height: 58%;
+	}
+
+	.quadruple-zpot img,
+	.tricky-middle img,
+	.tricky-bottom img,
+	.tricky-top img,
+	.double-zpot img,
+	.double-vertical-zpot img {
+		width: 30px;
+	}
+}
+
+@media screen and (max-width: 840px) {
+	.roulette-wrapper {
+		flex-direction: column;
+		gap: 10px;
+		margin-top: 20px;
+	}
+
+	.roulette-table-wrapper {
+		width: 70%;
+		height: 100%;
+	}
+
+	.roulette-image-wrapper {
+		width: 30%;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.roulette-image-wrapper {
+		width: 32%;
+	}
+
+	.chips {
+		gap: 0px;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.roulette-table-wrapper {
+		width: 80%;
+		height: 100%;
+	}
+
+	.roulette-wrapper {
+		gap: 0px;
+		margin-top: 15px;
+	}
+
+	.roulette-image-wrapper {
+		width: 35%;
+	}
+
+	.roulette-ball-image {
+		width: 11px;
+	}
+
+	.roulette-ball-wrapper {
+		transform: translate(-50%, -50%) rotate(47deg);
+		width: 60%;
+		height: 60%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.roulette-image-wrapper {
+		width: 45%;
+	}
+
+	.roulette-wrapper {
+		gap: 0px;
+		margin-top: 15px;
+	}
+
+	[class*="roulette-spot"] {
+		font-size: 0.8em;
+	}
+
+	[class*="zpot"] {
+		font-size: 0.7em;
+	}
+
+	.zpot-0-inner {
+		font-size: 1em;
+	}
+
+	.roulette-tablent-upper-top-left {
+		gap: 4px;
+		margin-bottom: 0px;
+	}
+
+	.roulette-tablent-upper-top-left img {
+		padding: 3px 5px;
+		width: 23px;
+	}
+
+	.spin-button {
+		padding: 6px 20px;
+		font-size: 1.2em;
+	}
+
+	.chip-image {
+		width: 40px;
+	}
+
+	.roulette-bet-amount {
+		font-size: 0.8em;
+	}
+
+	.roulette-ball-image {
+		width: 13px;
+	}
+
+	.roulette-ball-wrapper {
+		transform: translate(-50%, -50%) rotate(46deg);
+		width: 58%;
+		height: 58%;
+	}
+
+	.quadruple-zpot img,
+	.tricky-middle img,
+	.tricky-bottom img,
+	.tricky-top img,
+	.double-zpot img,
+	.double-vertical-zpot img {
+		width: 20px;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.roulette-table-wrapper {
+		width: 91%;
+		height: 100%;
+	}
+	.roulette-image-wrapper {
+		width: 55%;
+	}
+
+	.roulette-wrapper {
+		gap: 0px;
+		margin-top: 15px;
+	}
+
+	[class*="roulette-spot"] {
+		font-size: 0.8em;
+	}
+
+	.roulette-tablent-upper-top-left {
+		gap: 2px;
+		margin-bottom: -3px;
+	}
+
+	.roulette-tablent-upper-top-left img {
+		padding: 2px 4px;
+		width: 20px;
+		height: 28px;
+	}
+
+	.roulette-bet-amount {
+		font-size: 0.9em;
+		margin-right: -20px;
+	}
+
+	.roulette-ball-image {
+		width: 13px;
+	}
+
+	.roulette-ball-wrapper {
+		transform: translate(-50%, -50%) rotate(46deg);
+		width: 58%;
+		height: 58%;
+	}
+
+	.chip-image {
+		width: 40px;
+	}
+}
+
+@media screen and (max-width: 370px) {
+	.chip-image {
+		width: 30px;
+	}
+
+	.roulette-tablent-upper-top-left {
+		gap: 2px;
+		margin-bottom: -3px;
+	}
+
+	.roulette-tablent-upper-top-left img {
+		padding: 2px 4px;
+		width: 13px;
+		height: 20px;
+	}
+}

@@ -1,0 +1,33 @@
+.pot-error-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.75);
+	box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.75);
+	transition: all 0.4s ease;
+	z-index: 2;
+	border-radius: 8px;
+	padding: 20px;
+	background-color: #91e1f9;
+	font-size: 1.2em;
+	color: black;
+	max-width: 70%;
+}
+
+.pot-error-modal.show {
+	visibility: visible;
+	opacity: 1;
+}
+
+.pot-error-modal.hide {
+	visibility: hidden;
+	opacity: 0;
+}
+
+@media screen and (max-width: 420px) {
+	.pot-error-modal {
+		max-width: 90%;
+		font-size: 1em;
+	}
+}

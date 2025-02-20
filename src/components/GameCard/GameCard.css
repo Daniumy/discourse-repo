@@ -1,0 +1,244 @@
+.game-card-coinflip,
+.game-card-roulette,
+.game-card-russianroulette,
+.game-card-onetoten,
+.game-card-diceroll,
+.game-card-cardwar,
+.game-card-plinko {
+	width: 200px;
+	height: 200px;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	margin: 0 auto;
+	position: relative;
+}
+
+.game-card-russianroulette {
+	background-image: linear-gradient(0deg, rgb(37, 103, 208) 0%, rgb(131, 220, 183) 100%, rgb(123, 219, 148) 100%);
+	-webkit-box-shadow: 3px 8px 20px 2px #274f88;
+	-moz-box-shadow: 3px 8px 20px 2px #274f88;
+	/* offset-x | offset-y | blur-radius | spread-radius | color */
+	box-shadow: 3px 8px 20px 2px #274f88;
+	z-index: 0;
+}
+.game-card-coinflip {
+	background-image: linear-gradient(0deg, rgb(208, 37, 37) 0%, rgb(220, 171, 131) 100%, rgb(123, 219, 148) 100%);
+	-webkit-box-shadow: 3px 3px 20px 2px rgb(208, 37, 37);
+	-moz-box-shadow: 3px 3px 20px 2px rgb(208, 37, 37);
+	/* offset-x | offset-y | blur-radius | spread-radius | color */
+	box-shadow: 3px 3px 20px 2px rgb(208, 37, 37);
+}
+
+.game-card-cardwar {
+	background-image: linear-gradient(0deg, rgb(155, 128, 236) 0%, rgb(112, 14, 89) 100%);
+	-webkit-box-shadow: 3px 8px 20px 2px rgb(54, 38, 103);
+	-moz-box-shadow: 3px 8px 20px 2px rgb(54, 38, 103);
+	/* offset-x | offset-y | blur-radius | spread-radius | color */
+	box-shadow: 3px 8px 20px 2px rgb(54, 38, 103);
+}
+
+.game-card-onetoten {
+	background-image: linear-gradient(rgb(142, 246, 255) 0%, rgb(153, 109, 198) 100%);
+	-webkit-box-shadow: 3px 3px 20px 2px rgb(153, 109, 198);
+	-moz-box-shadow: 3px 3px 20px 2px rgb(153, 109, 198);
+	/* offset-x | offset-y | blur-radius | spread-radius | color */
+	box-shadow: 3px 3px 20px 2px rgb(153, 109, 198);
+}
+
+.game-card-roulette {
+	background-image: linear-gradient(0deg, rgb(254, 16, 154) 0%, rgb(255, 129, 117) 100%);
+	-webkit-box-shadow: 3px 3px 20px 2px rgb(254, 16, 154);
+	-moz-box-shadow: 3px 3px 20px 2px rgb(254, 16, 154);
+	/* offset-x | offset-y | blur-radius | spread-radius | color */
+	box-shadow: 3px 3px 20px 2px rgb(254, 16, 154);
+}
+
+.game-card-diceroll {
+	background-image: linear-gradient(rgb(121, 48, 156) 0%, rgb(255, 24, 138) 100%, rgb(255, 43, 146) 100%);
+	-webkit-box-shadow: 2px 2px 20px 2px rgb(255, 43, 146);
+	-moz-box-shadow: 2px 2px 20px 2px rgb(255, 43, 146);
+	/* offset-x | offset-y | blur-radius | spread-radius | color */
+	box-shadow: 2px 2px 20px 2px rgb(255, 43, 146);
+	z-index: 0;
+}
+
+.game-card-plinko {
+	background-image: linear-gradient(0deg, rgb(54, 38, 103) 0%, rgb(167, 48, 140) 100%);
+	-webkit-box-shadow: 3px 8px 20px 2px rgb(54, 38, 103);
+	-moz-box-shadow: 3px 8px 20px 2px rgb(54, 38, 103);
+	/* offset-x | offset-y | blur-radius | spread-radius | color */
+	box-shadow: 3px 8px 20px 2px rgb(54, 38, 103);
+	z-index: 0;
+}
+
+.game-card-coinflip:hover,
+.game-card-roulette:hover,
+.game-card-russianroulette:hover,
+.game-card-onetoten:hover,
+.game-card-diceroll:hover,
+.game-card-cardwar:hover,
+.game-card-plinko:hover {
+	-webkit-transform: translateY(5px);
+	transform: translateY(5px);
+}
+
+.game-card--play-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	width: 40%;
+	height: 40%;
+}
+
+.game-card-coinflip:hover .game-card--play-icon,
+.game-card-roulette:hover .game-card--play-icon,
+.game-card-russianroulette:hover .game-card--play-icon,
+.game-card-onetoten:hover .game-card--play-icon,
+.game-card-diceroll:hover .game-card--play-icon,
+.game-card-cardwar:hover .game-card--play-icon,
+.game-card-plinko:hover .game-card--play-icon {
+	opacity: 1;
+}
+
+#game-card--image-coinflip,
+#game-card--image-roulette,
+#game-card--image-russianroulette,
+#game-card--image-onetoten,
+#game-card--image-diceroll,
+#game-card--image-cardwar,
+#game-card--image-plinko {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -60%);
+	border-radius: 8px;
+	object-fit: contain;
+	opacity: 1;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#game-card--image-roulette,
+#game-card--image-diceroll {
+	width: 100%;
+}
+
+#game-card--image-coinflip {
+	width: 135%;
+}
+
+#game-card--image-russianroulette {
+	width: 85%;
+	transform: translate(-50%, -75%);
+}
+
+#game-card--image-onetoten {
+	width: 100%;
+}
+
+#game-card--image-cardwar {
+	width: 110%;
+}
+
+#game-card--image-plinko {
+	width: 80%;
+}
+
+.game-card:hover #game-card--image,
+.game-card:hover #game-card--title {
+	opacity: 0.1;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#game-card--title {
+	text-align: center;
+	font-size: 1.8em;
+	margin: 10px;
+	color: white;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	position: absolute;
+	bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+	.game-card-coinflip,
+	.game-card-roulette,
+	.game-card-russianroulette,
+	.game-card-onetoten,
+	.game-card-diceroll,
+	.game-card-cardwar,
+	.game-card-plinko {
+		width: 160px;
+	}
+
+	#game-card--image-onetoten {
+		transform: translate(-50%, -69%);
+		/* //jaja */
+	}
+
+	.game-card-russianroulette {
+		background-image: linear-gradient(0deg, rgb(37, 103, 208) 0%, rgb(131, 220, 183) 100%, rgb(123, 219, 148) 100%);
+		-webkit-box-shadow: 3px 8px 20px 2px #274f88;
+		-moz-box-shadow: 3px 8px 20px 2px #274f88;
+		/* offset-x | offset-y | blur-radius | spread-radius | color */
+		box-shadow: 3px 8px 20px 2px #274f88;
+		z-index: 1;
+	}
+	.game-card-coinflip {
+		background-image: linear-gradient(0deg, rgb(208, 37, 37) 0%, rgb(220, 171, 131) 100%, rgb(123, 219, 148) 100%);
+		-webkit-box-shadow: 3px 3px 20px 2px rgb(208, 37, 37);
+		-moz-box-shadow: 3px 3px 20px 2px rgb(208, 37, 37);
+		/* offset-x | offset-y | blur-radius | spread-radius | color */
+		box-shadow: 3px 3px 20px 2px rgb(208, 37, 37);
+	}
+
+	.game-card-cardwar {
+		-webkit-box-shadow: 4px 6px 8px 1px rgb(54, 38, 103);
+		-moz-box-shadow: 4px 6px 8px 1px rgb(54, 38, 103);
+		/* offset-x | offset-y | blur-radius | spread-radius | color */
+		box-shadow: 4px 6px 8px 1px rgb(54, 38, 103);
+	}
+
+	.game-card-onetoten {
+		-webkit-box-shadow: 2px 2px 10px 2px rgb(153, 109, 198);
+		-moz-box-shadow: 2px 2px 10px 2px rgb(153, 109, 198);
+		/* offset-x | offset-y | blur-radius | spread-radius | color */
+		box-shadow: 2px 2px 10px 2px rgb(153, 109, 198);
+	}
+
+	.game-card-diceroll {
+		-webkit-box-shadow: 1x 1px 8px 1px rgb(255, 43, 146);
+		-moz-box-shadow: 1x 1px 8px 1px rgb(255, 43, 146);
+		/* offset-x | offset-y | blur-radius | spread-radius | color */
+		box-shadow: 1px 1px 8px 1px rgb(255, 43, 146);
+		z-index: 0;
+	}
+
+	.game-card-plinko {
+		-webkit-box-shadow: 3px 6px 8px 1px rgb(54, 38, 103);
+		-moz-box-shadow: 3px 6px 8px 1px rgb(54, 38, 103);
+		/* offset-x | offset-y | blur-radius | spread-radius | color */
+		box-shadow: 3px 6px 8px 1px rgb(54, 38, 103);
+	}
+}

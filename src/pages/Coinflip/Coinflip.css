@@ -1,0 +1,42 @@
+.coinflip-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+}
+
+.flip-the-coin {
+	padding: 20px 50px;
+	border-radius: 8px;
+	font-weight: bold;
+	font-size: 2.5em;
+	cursor: pointer;
+	background-color: #91e1f9;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	width: 120px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.flip-the-coin:disabled {
+	background-color: #828a8a;
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+@media screen and (max-width: 920px) {
+	.flip-the-coin {
+		padding: 12px 20px;
+		font-size: 2em;
+		margin-left: 0px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.flip-the-coin {
+		margin-top: 20px;
+	}
+}

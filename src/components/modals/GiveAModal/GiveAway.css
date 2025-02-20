@@ -1,0 +1,31 @@
+.giveaway-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.75);
+	box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.75);
+	transition: all 0.4s ease;
+	z-index: 2;
+	border-radius: 8px;
+	padding: 20px;
+	background-color: #91e1f9;
+	font-size: 1.2em;
+}
+
+.giveaway-modal.show {
+	visibility: visible;
+	opacity: 1;
+}
+
+.giveaway-modal.hide {
+	visibility: hidden;
+	opacity: 0;
+}
+
+@media screen and (max-width: 420px) {
+	.giveaway-modal {
+		width: 90%;
+		font-size: 1em;
+	}
+}

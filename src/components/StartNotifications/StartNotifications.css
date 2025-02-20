@@ -1,0 +1,146 @@
+.notifications-bell {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	transition: all 0.2s ease;
+	z-index: 2;
+	width: 60px;
+}
+
+.notifications-bell.show {
+	visibility: visible;
+	opacity: 1;
+}
+
+.notifications-bell.hide {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.notifications-bell img {
+	width: 50px;
+	cursor: pointer;
+}
+
+.start-notifications-container {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	transition: all 0.4s ease;
+	z-index: 2;
+	font-size: 1.2em;
+	width: 25vw;
+	background-image: linear-gradient(
+		to left,
+		#d8e8ff,
+		#c7dbfd,
+		#b6cefb,
+		#a7c1f8,
+		#9ab4f5
+	);
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	gap: 15px;
+	align-items: center;
+}
+
+.start-notifications-container.show {
+	visibility: visible;
+	opacity: 1;
+}
+
+.start-notifications-container.hide {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.notifications-wrapper {
+	width: 90%;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	gap: 20px;
+	align-items: center;
+}
+
+.notification-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	border-radius: 8px;
+	width: 100%;
+	box-shadow: 2px 3px 3px #888888;
+	font-size: 0.8em;
+	overflow: hidden;
+	height: fit-content;
+	padding: 10px 10px;
+	font-weight: 500;
+	gap: 5px;
+}
+
+.notifications-header {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	flex-direction: row;
+	background-color: #1c1f67;
+	box-shadow: 0px 2px 3px #888888;
+	border-top-left-radius: inherit;
+	border-top-right-radius: inherit;
+	position: relative;
+	padding: 10px 0px;
+}
+.notifications-header img {
+	width: 30px;
+	cursor: pointer;
+	padding-left: 5%;
+}
+.notifications-header span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 1.3em;
+	font-weight: 600;
+}
+
+@media screen and (max-width: 1100px) {
+	.start-notifications-container {
+		width: 45vw;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.start-notifications-container {
+		width: 60vw;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.start-notifications-container {
+		width: 80vw;
+	}
+
+	.start-notifications-container {
+		font-size: 1em;
+	}
+
+	.notifications-header span {
+		font-size: 1.15em;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.notifications-bell {
+		width: 30px;
+	}
+	.notifications-bell img {
+		width: 30px;
+	}
+}

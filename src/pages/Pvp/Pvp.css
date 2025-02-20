@@ -1,0 +1,39 @@
+.pvp-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 90vh;
+	width: 100%;
+	margin-top: 12vh;
+	align-items: center;
+}
+
+.pvp-grid-container {
+	display: grid;
+	grid-auto-rows: 200px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 8px;
+	width: 95%;
+	padding-top: 10px;
+	margin: 0 auto;
+}
+
+.pvp-create-game__button {
+	padding: 10px;
+	background-color: #91e1f9;
+	width: 20%;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.pvp-create-game__button:hover {
+	box-shadow: inset 10em 0 0 0 #2b4fbd, inset -10em 0 0 0 #2b4fbd;
+	color: white;
+}

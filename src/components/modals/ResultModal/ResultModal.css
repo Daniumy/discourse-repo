@@ -1,0 +1,96 @@
+.result-popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	transform: translate(-50%, -50%);
+	background-color: #91e1f9;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	gap: 20px;
+	box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.75);
+	/* For other browsers */
+	box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.75);
+}
+
+.result-popup span {
+	color: black;
+	font-size: 2.2em;
+	font-weight: bold;
+}
+
+.result-transactions-a {
+	text-decoration: none;
+}
+
+.result-transactions-div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 7px 15px;
+	border-radius: 8px;
+	font-weight: bold;
+	font-size: 1.5em;
+	background-color: white;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	color: #1f2ec9;
+}
+
+.result-transactions-div:hover {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	box-shadow: inset 4em 0 0 0 #1f2ec9, inset -4em 0 0 0 #1f2ec9;
+	color: white;
+}
+
+.amount-received-at-pot {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: black;
+	padding: 0px 20px;
+	cursor: auto;
+}
+
+.refresh-at-result {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 7px 7px !important;
+	border-radius: 8px;
+	font-weight: bold;
+	font-size: 1em !important;
+	background-color: white;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	color: #1f2ec9;
+	cursor: pointer;
+}
+
+.refresh-at-result:hover {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	box-shadow: inset 0 2em 0 0 #1f2ec9, inset 0 -2em 0 0 #1f2ec9;
+	color: white;
+}
+
+@media screen and (max-width: 420px) {
+	.result-popup {
+		width: 70%;
+		font-size: 1em;
+	}
+}

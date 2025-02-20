@@ -1,0 +1,280 @@
+.header {
+	background-color: transparent;
+	height: 10vh;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0px;
+	z-index: 2;
+}
+
+.header-logo-a {
+	width: 450px;
+	height: 80%;
+}
+
+.header-logo {
+	background-image: url("/src/assets/logoGrandGambit.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.logout-icon {
+	display: none;
+}
+
+.hamburger-icon-wrapper {
+	width: 95px;
+	z-index: 2;
+}
+
+.hamburger-icon {
+	width: 40px;
+	cursor: pointer;
+	margin-left: 20px;
+}
+
+.header-wallet-button {
+	margin-right: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 8px;
+	border: none;
+	width: 100px;
+	background-image: linear-gradient(to left, #91e1f9, #8dd5f1, #89cae9, #86bee0, #84b3d6);
+	cursor: pointer;
+	position: relative;
+	height: 65%;
+	text-align: center;
+}
+
+.header-wallet-button-text {
+	font-weight: bold;
+	color: black;
+	font-size: 1em;
+	width: max-content;
+}
+
+.header-wallet-button img {
+	width: 40px;
+}
+
+.header-wallet-button-connected,
+.header-wallet-button-disconnected {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+.header-wallet-button-connected.nautilus {
+	display: flex;
+	flex-direction: column;
+	font-size: 0.7em;
+}
+
+.header-wallet-button-connected.nautilus img {
+	width: 25px;
+}
+
+.balance-display {
+	justify-content: space-evenly;
+}
+
+.balance-display,
+.delete-wallet-display,
+.delete-ergopay-display,
+.wallet-option-nautilus,
+.wallet-option-ergopay {
+	position: absolute;
+	left: 0px;
+	width: 95px;
+	height: 25px;
+	padding: 10px 0px;
+	border-radius: 8px;
+	border: 2px solid #91e1f9;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	font-size: 0.9em;
+}
+
+.balance-display,
+.wallet-option-nautilus,
+.delete-ergopay-display {
+	bottom: -48px;
+}
+
+.delete-wallet-display,
+.wallet-option-ergopay {
+	bottom: -96px;
+}
+
+.delete-wallet-display,
+.delete-ergopay-display {
+	justify-content: center;
+}
+
+.balance-display span,
+.delete-wallet-display span,
+.delete-ergopay-display span {
+	font-weight: bold;
+}
+
+.balance-display:hover,
+.delete-wallet-display:hover,
+.wallet-option-nautilus:hover,
+.wallet-option-ergopay:hover {
+	background-color: rgb(235, 229, 229);
+}
+
+.delete-wallet-display span,
+.delete-ergopay-display span {
+	color: red;
+}
+
+.wallet-option-nautilus img,
+.wallet-option-ergopay img {
+	width: 30px;
+}
+
+@media screen and (max-width: 750px) {
+	.hamburger-icon {
+		display: block;
+	}
+
+	.home-hyperlink {
+		display: none;
+	}
+
+	.transactions-hyperlink {
+		display: none;
+	}
+
+	.faq-nav {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.header-logo-a {
+		width: 250px;
+	}
+
+	.header {
+		height: 60px;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.navigation {
+		margin-right: 0px;
+		margin-left: 20px;
+	}
+	.header-img {
+		height: 45px;
+	}
+
+	.header-wallet-button img {
+		width: 35px;
+	}
+
+	.balance-display,
+	.delete-wallet-display,
+	.delete-ergopay-display,
+	.wallet-option-nautilus,
+	.wallet-option-ergopay {
+		font-size: 0.7em;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.header-logo-a {
+		width: 220px;
+	}
+	.header-logo {
+		background-image: url("/src/assets/gif-banner.jpg");
+	}
+
+	.wallet-option-nautilus {
+		display: none;
+	}
+
+	.header-wallet-button {
+		width: 40px;
+	}
+
+	.hamburger-icon-wrapper {
+		width: 60px;
+	}
+
+	.ergopay-choice {
+		font-size: 0.8em;
+	}
+
+	.header-wallet-button-text {
+		display: none;
+	}
+
+	.wallet-option-ergopay {
+		flex-direction: column;
+		bottom: -48px;
+		width: 35px;
+	}
+
+	.balance-display,
+	.delete-wallet-display,
+	.delete-ergopay-display {
+		width: 35px;
+	}
+
+	.wallet-option-nautilus img,
+	.wallet-option-ergopay img {
+		width: 25px;
+	}
+
+	.header-wallet-button img {
+		width: 25px;
+	}
+
+	.logout-icon {
+		display: block;
+	}
+
+	.logout-text {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.header-img {
+		height: 30px;
+	}
+
+	.header-wallet-button-text {
+		font-size: 0.9em;
+	}
+
+	.balance-display,
+	.delete-wallet-display,
+	.delete-ergopay-display,
+	.wallet-option-nautilus,
+	.wallet-option-ergopay {
+		font-size: 0.7em;
+	}
+}

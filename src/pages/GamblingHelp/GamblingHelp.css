@@ -1,0 +1,231 @@
+.gambling-help-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	margin-top: 3vh;
+	height: 89vh;
+	color: white;
+}
+
+.gambling-help-questions-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	gap: 20px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.gambling-help-questions-wrapper.show {
+	visibility: visible;
+	opacity: 1;
+}
+
+.gambling-help-questions-wrapper.hide {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+.gambling-help-title {
+	padding-bottom: 30px;
+	text-align: center;
+	border-bottom: 1px solid rgb(79, 234, 255);
+}
+
+.gambling-help-question-wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	width: 70%;
+	font-size: 1.2em;
+	font-weight: 400;
+}
+
+.gambling-help-question-wrapper span {
+	width: 90%;
+}
+
+.gambling-help-select {
+	font-size: 0.8em;
+	width: 200px;
+}
+
+.dangerous-gambling-zone {
+	text-align: center;
+}
+
+.dangerous-gambling-zone.show {
+	padding: 20px;
+	background-image: linear-gradient(
+		to top,
+		#f36a6a,
+		#ef5957,
+		#e94743,
+		#e2322e,
+		#da1717
+	);
+	border-radius: 8px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.gambling-help-contact-us {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	font-size: 1.4em;
+	font-weight: 500;
+	width: 70%;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.gambling-help-contact-us.show {
+	visibility: visible;
+	opacity: 1;
+}
+
+.gambling-help-contact-us.hide {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+}
+
+@media screen and (max-width: 950px) {
+	.gambling-help-wrapper {
+		margin-top: 10vh;
+		height: 90vh;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.gambling-help-wrapper {
+		margin-top: 0vh;
+	}
+
+	.dangerous-gambling-zone {
+		width: 80%;
+		font-size: 1.2em;
+	}
+
+	.gambling-help-contact-us {
+		font-size: 1em;
+		width: 90%;
+	}
+
+	.gambling-help-title {
+		padding-bottom: 25px;
+		font-size: 1.5em;
+	}
+
+	.gambling-help-questions-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		gap: 15px;
+	}
+
+	.gambling-help-question-wrapper {
+		gap: 20px;
+		width: 90%;
+		font-size: 1em;
+		font-weight: 500;
+	}
+
+	.gambling-help-question-wrapper span {
+		width: 85%;
+	}
+
+	.gambling-help-select {
+		font-size: 0.8em;
+		width: 200px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.gambling-help-wrapper {
+		margin-top: 0vh;
+	}
+
+	.dangerous-gambling-zone {
+		width: 80%;
+		font-size: 1.2em;
+	}
+
+	.gambling-help-contact-us {
+		font-size: 1em;
+		width: 90%;
+	}
+
+	.gambling-help-title {
+		padding-bottom: 25px;
+		font-size: 1.3em;
+	}
+
+	.gambling-help-questions-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		gap: 15px;
+	}
+
+	.gambling-help-question-wrapper {
+		gap: 20px;
+		width: 90%;
+		font-size: 0.9em;
+		font-weight: 500;
+	}
+}
+
+@media screen and (max-width: 400px) and (max-height: 750px) {
+	.gambling-help-wrapper {
+		margin-top: 3vh;
+	}
+
+	.dangerous-gambling-zone {
+		width: 80%;
+		font-size: 1em;
+	}
+
+	.gambling-help-title {
+		padding-bottom: 25px;
+		padding: 0px 10px 25px 10px;
+		font-size: 1.2em;
+	}
+
+	.gambling-help-questions-wrapper {
+		gap: 10px;
+	}
+
+	.gambling-help-question-wrapper {
+		font-size: 0.8em;
+		font-weight: 400;
+	}
+}
+
+@media screen and (max-width: 350px) and (max-height: 700px) {
+	.gambling-help-wrapper {
+		margin-top: 15vh;
+	}
+}

@@ -1,0 +1,141 @@
+.main {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	margin-right: 20px;
+	margin-top: -5%;
+}
+
+.coin-flip-wrapper {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 400px;
+	width: 400px;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.heads,
+.tails {
+	position: absolute;
+	width: 350px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.tails {
+	-webkit-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+
+.select-heads,
+.select-tails {
+	padding: 10px 30px;
+	width: auto;
+	border: 2px solid #91e1f9;
+	border-radius: 8px;
+	font-weight: bold;
+	font-size: 2em;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+}
+
+.select-heads {
+	margin-left: 200px;
+}
+
+.select-tails {
+	margin-right: 200px;
+}
+
+.select-heads:hover,
+.select-tails:hover,
+.flip-the-coin:hover {
+	transform: translateY(-10px);
+}
+
+@media screen and (max-width: 1100px) {
+	.heads,
+	.tails {
+		width: 300px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.heads,
+	.tails {
+		width: 200px;
+	}
+
+	.coin-flip-wrapper {
+		height: 300px;
+		width: 300px;
+	}
+}
+
+@media screen and (max-width: 920px) {
+	.coin-flip-wrapper {
+		height: 200px;
+		width: 200px;
+	}
+
+	.heads,
+	.tails {
+		width: 200px;
+	}
+
+	.main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.select-heads {
+		margin-left: 0px;
+	}
+
+	.select-tails {
+		margin-right: 0px;
+	}
+
+	.select-heads,
+	.select-tails {
+		padding: 5px 12px;
+		margin: 30px 0px;
+		font-size: 1.2em;
+	}
+	.main {
+		margin-right: 0px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.select-heads,
+	.select-tails {
+		margin: 25px 0px;
+	}
+
+	.main {
+		margin-top: -5%;
+	}
+}
+
+@media screen and (max-width: 420px) and (min-height: 750px) {
+	.select-heads,
+	.select-tails {
+		padding: 6px 16px;
+		margin: 45px 0px;
+		font-size: 1.5em;
+	}
+
+	.heads,
+	.tails {
+		width: 100%;
+	}
+}

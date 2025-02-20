@@ -1,0 +1,68 @@
+.russian-wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
+	width: 100%;
+	gap: 20px;
+}
+
+.gun-shot {
+	transition: all 1s;
+}
+
+.gun-shot.loading {
+	animation: rotate_pistol 3s linear infinite;
+}
+
+.gun-shot.active {
+	transform: rotate(20deg) translateY(60px);
+}
+
+.arm-image {
+	position: absolute;
+	top: 1%;
+	left: 80%;
+	transform: translate(-50%, -50%);
+	transition: all 1s;
+	opacity: 0;
+}
+
+.arm-image.active {
+	opacity: 1;
+	position: absolute;
+	top: 20%;
+	left: 62%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+}
+
+.play-rroulette-button {
+	padding: 15px 40px;
+	border-radius: 8px;
+	background-color: #91e1f9;
+	font-size: 2em;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+@keyframes rotate_pistol {
+	from {
+		transform: scale(0.5, 0.5);
+	}
+	to {
+		transform: scale(1.2, 1.2);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.russian-wrapper {
+		flex-direction: column;
+	}
+
+	.gun-shot {
+		width: 200px;
+		transition: all 1s;
+	}
+}

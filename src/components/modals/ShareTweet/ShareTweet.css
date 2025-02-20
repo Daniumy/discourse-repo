@@ -1,0 +1,54 @@
+.share-tweet-wrapper {
+	position: absolute;
+	bottom: 5%;
+	right: 1%;
+	background-color: #91e1f9;
+	font-size: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	width: fit-content;
+	z-index: 2;
+	height: 90px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	font-weight: bold;
+	padding: 5px 10px;
+	border-radius: 8px;
+}
+
+.share-tweet-container {
+	background-color: #1f2ec9;
+	border-radius: 8px;
+	padding: 10px;
+}
+
+.share-tweet-options {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+.share-tweet-options span {
+	background-color: aliceblue;
+	color: black;
+	padding: 5px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+	.share-tweet-text {
+		font-size: 0.9em;
+		padding: 2px;
+	}
+
+	.share-tweet-options span {
+		padding: 3px;
+		font-size: 0.8em;
+	}
+}
